@@ -66,7 +66,7 @@ root.railsDatatables = ( sSource, aoData, fnCallback ) ->
   data.push({name: "sEcho", value: sEcho});
   data.push({name: "page", value: iDisplayStart/iDisplayLength + 1});
   data.push({name: "per_page", value: iDisplayLength});
-  data.push({name: "search[meta_sort]", value: sortcolumns[0]});
+  data.push({name: "search[meta_sort]", value: sortcolumns.join('_and_')});
 
   $.each(columns, (index, val) -> 
     data.push({name: "columns["+index+"]", value: val});
