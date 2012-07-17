@@ -1,6 +1,11 @@
 = Simple Datatables for Kaminari
 
-This fork works with kaminari gem!
+--------------------
+=== Fork Existence Explanation
+
+* This fork adds the capability to use multiple column support. Requires the comparable gem in https://github.com/Comal/meta_search
+* This fork works with kaminari gem! 
+--------------------
 
 Connects two awesome plugins - Datatables for Jquery and Meta Search together for Rails 3.1
 
