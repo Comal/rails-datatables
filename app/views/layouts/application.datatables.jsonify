@@ -32,8 +32,8 @@ end
 
 total_entries = current_page_entries if total_entries.nil?
 
-json.iTotalRecords current_page_entries
-json.iTotalDisplayRecords total_entries
+json.iTotalRecords @total_entries || current_page_entries
+json.iTotalDisplayRecords @total_entries || total_entries
 json.sEcho params["sEcho"].to_i
 json.aaData do
   json.ingest! yield
